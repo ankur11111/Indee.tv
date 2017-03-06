@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SuiteName">
+              <span class="suite-name border-failed">SuiteName</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SuiteName">
+                    <span>C:\Users\ankur\workspace\Indee\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SuiteName">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SuiteName">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SuiteName">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SuiteName">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SuiteName">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SuiteName">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 3 failed,  1 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods failed suite-SuiteName"> (hide)</a> <!-- hide-methods failed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods failed suite-SuiteName"> (show)</a> <!-- show-methods failed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteName">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=2, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)">DemoScreenerTest({Feature=checked, maxViews=2, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)">DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)">DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods skipped suite-SuiteName"> (hide)</a> <!-- hide-methods skipped suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods skipped suite-SuiteName"> (show)</a> <!-- show-methods skipped suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content skipped suite-SuiteName">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=n, Bro...)">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=n, Bro...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods passed suite-SuiteName"> (hide)</a> <!-- hide-methods passed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods passed suite-SuiteName"> (show)</a> <!-- show-methods passed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content passed suite-SuiteName">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mo...)">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mo...)">DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.core.ddf.Indee.testcases.DemoScreener" hash-for-method="DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, ...)">DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteName -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SuiteName" class="panel SuiteName">
+          <div class="suite-SuiteName-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.core.ddf.Indee.testcases.DemoScreener</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=2, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=2, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=2, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, username=amit})</span>
+                  <div class="stack-trace">java.lang.AssertionError: views count does not exist
+	at com.core.ddf.Indee.base.BaseTest.reportFailure(BaseTest.java:168)
+	at com.core.ddf.Indee.base.BaseTest.demoScreener(BaseTest.java:233)
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:37)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, username=amit})</span>
+                  <div class="stack-trace">java.lang.AssertionError: PerishesIn does not exist
+	at com.core.ddf.Indee.base.BaseTest.reportFailure(BaseTest.java:168)
+	at com.core.ddf.Indee.base.BaseTest.demoScreener(BaseTest.java:248)
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:37)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, username=})</span>
+                  <div class="stack-trace">java.lang.AssertionError: PerishesIn does not exist
+	at com.core.ddf.Indee.base.BaseTest.reportFailure(BaseTest.java:168)
+	at com.core.ddf.Indee.base.BaseTest.demoScreener(BaseTest.java:248)
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:37)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-failed -->
+          <div class="suite-SuiteName-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.core.ddf.Indee.testcases.DemoScreener</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=n, Bro...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=n, Bro...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=n, Browser=Mozilla, username=amit})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as runmode is N
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:31)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-skipped -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.core.ddf.Indee.testcases.DemoScreener</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, username=amit})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, username=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mo...)">
+                  </a> <!-- DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mo...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, username=amit})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mo...)">
+                  </a> <!-- DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mo...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, username=amit})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, ...)">
+                  </a> <!-- DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, ...) -->
+                  <span class="method-name">DemoScreenerTest</span>
+                  <span class="parameters">({Feature=, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, username=ankur})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+        </div> <!-- panel SuiteName -->
+        <div panel-name="test-xml-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ankur\workspace\Indee\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;SuiteName&quot;&gt;
+  &lt;test name=&quot;DemoScreenerTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.core.ddf.Indee.testcases.DemoScreener&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DemoScreenerTest --&gt;
+&lt;/suite&gt; &lt;!-- SuiteName --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">DemoScreenerTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SuiteName');
+function tableData_SuiteName() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'DemoScreenerTest')
+data.setCell(0, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(0, 3, 18847);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'DemoScreenerTest')
+data.setCell(1, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(1, 3, 14365);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DemoScreenerTest')
+data.setCell(2, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(2, 3, 14239);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DemoScreenerTest')
+data.setCell(3, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(3, 3, 13740);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DemoScreenerTest')
+data.setCell(4, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(4, 3, 13324);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'DemoScreenerTest')
+data.setCell(5, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(5, 3, 11153);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DemoScreenerTest')
+data.setCell(6, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(6, 3, 9996);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DemoScreenerTest')
+data.setCell(7, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(7, 3, 9315);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'DemoScreenerTest')
+data.setCell(8, 2, 'com.core.ddf.Indee.testcases.DemoScreener')
+data.setCell(8, 3, 0);
+window.suiteTableData['SuiteName']= { tableData: data, tableDiv: 'times-div-SuiteName'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-SuiteName">
+              </div> <!-- times-div-SuiteName -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.core.ddf.Indee.testcases.DemoScreener</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mozilla, ...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">13334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">14044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)</span>
+                <span class="method-start">14044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">28283 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">28766 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)</span>
+                <span class="method-start">28766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">47613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">48059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=2, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Bro...)</span>
+                <span class="method-start">48060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">59213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">59650 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)</span>
+                <span class="method-start">59650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">68966 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">69381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=3, email=, Trailer=checked, perishesIn=6.0, Runmode=y, Browser=Mozilla, u...)</span>
+                <span class="method-start">69381 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">79378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">79852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=, perishesIn=6 hrs, Runmode=y, Browser=Mo...)</span>
+                <span class="method-start">79852 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">94218 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">94652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DemoScreenerTest({Feature=, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=y, Browser=Mo...)</span>
+                <span class="method-start">94652 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">108392 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">108861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DemoScreenerTest({Feature=checked, maxViews=1, email=ank@gmail.com, Trailer=checked, perishesIn=6 hrs, Runmode=n, Bro...)</span>
+                <span class="method-start">108862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">108862 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

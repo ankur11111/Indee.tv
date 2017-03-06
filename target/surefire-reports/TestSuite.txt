@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 110.407 sec <<< FAILURE! - in TestSuite
+DemoScreenerTest(com.core.ddf.Indee.testcases.DemoScreener)  Time elapsed: 11.153 sec  <<< FAILURE!
+java.lang.AssertionError: views count does not exist
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.Indee.base.BaseTest.reportFailure(BaseTest.java:168)
+	at com.core.ddf.Indee.base.BaseTest.demoScreener(BaseTest.java:233)
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:37)
+
+DemoScreenerTest(com.core.ddf.Indee.testcases.DemoScreener)  Time elapsed: 9.315 sec  <<< FAILURE!
+java.lang.AssertionError: PerishesIn does not exist
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.Indee.base.BaseTest.reportFailure(BaseTest.java:168)
+	at com.core.ddf.Indee.base.BaseTest.demoScreener(BaseTest.java:248)
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:37)
+
+DemoScreenerTest(com.core.ddf.Indee.testcases.DemoScreener)  Time elapsed: 9.996 sec  <<< FAILURE!
+java.lang.AssertionError: PerishesIn does not exist
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.Indee.base.BaseTest.reportFailure(BaseTest.java:168)
+	at com.core.ddf.Indee.base.BaseTest.demoScreener(BaseTest.java:248)
+	at com.core.ddf.Indee.testcases.DemoScreener.DemoScreenerTest(DemoScreener.java:37)
+

@@ -1,0 +1,10 @@
+<suite name="SuiteName">
+	
+	<test name="DemoScreenerTest" allow-return-values="true">
+		<classes>
+			<class name="com.core.ddf.Indee.testcases.DemoScreener" />
+		</classes>
+	</test>
+	
+</suite>
+
